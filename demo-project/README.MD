@@ -1,0 +1,1 @@
+We deploy mongo express and mongo db in kubernetes
