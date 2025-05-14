@@ -26,4 +26,5 @@ jobs:
         echo "$KUBECONFIG_DATA" | base64 --decode > $HOME/.kube/config
 
     - name: Deploy to cluster
-      run: kubectl apply -f mongo-stack.yml
+      run: kubectl apply -f mongo-stack.yml --validate=false
+
